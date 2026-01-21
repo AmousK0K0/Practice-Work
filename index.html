@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Totally Science Hub</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #eef3f8;
+  color: #222;
+}
+
+header {
+  background: #1f4fd8;
+  color: white;
+  padding: 15px 25px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  height: calc(100vh - 60px);
+}
+
+.sidebar {
+  width: 260px;
+  background: #ffffff;
+  border-right: 1px solid #ccc;
+  overflow-y: auto;
+}
+
+.sidebar h2 {
+  padding: 10px;
+  margin: 0;
+  background: #f4f6fa;
+  font-size: 16px;
+  border-bottom: 1px solid #ccc;
+}
+
+.game-btn {
+  padding: 10px 12px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.game-btn:hover {
+  background: #e8eefc;
+}
+
+.main {
+  flex: 1;
+  padding: 10px;
+  background: #f7f9fc;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 8px;
+  background: white;
+}
+</style>
+</head>
+
+<body>
+
+<header>Totally Science</header>
+
+<div class="container">
+  <div class="sidebar">
+    <h2>Games</h2>
+
+    <!-- 50+ GAME BUTTONS -->
+    <div class="game-btn" onclick="loadGame('https://example.com/game1')">Game 1</div>
+    <div class="game-btn" onclick="loadGame('https://example.com/game2')">Game 2</div>
+    <div class="game-btn" onclick="loadGame('https://example.com/game3')">Game 3</div>
+    <div class="game-btn" onclick="loadGame('https://example.com/game4')">Game 4</div>
+    <div class="game-btn" onclick="loadGame('https://example.com/game5')">Game 5</div>
+    <div class="game-btn" onclick="loadGame('https://example.com/game6')">Game 6</div>
+    <div class="game-btn" onclick="loadGame('https://example.com/game7')">Game 7</div>
+    <div class="game-btn" onclick="loadGame('https://example.com/game8')">Game 8</div>
+    <div class="game-btn" onclick="loadGame('https://example.com/game9')">Game 9</div>
+    <div class="game-btn" onclick="loadGame('https://example.com/game10')">Game 10</div>
+
+    <div class="game-btn" onclick="loadGame('https://example.com/game11')">Game 11</div>
+    <div class="game-btn" onclick="loadGame('https://example.com/game12')">Game 12</div>
+    <div class="game-btn" onclick="loadGame('https://example.com/game13')">Game 13</div>
+    <div class="game-btn" onclick="loadGame('https://example.com/game14')">Game 14</div>
+    <div class="game-btn" onclick="loadGame('https://example.com/game15')">Game 15</div>
+    <div class="game-btn" onclick="loadGame('https://example.com/game16')">Game 16</div>
+    <div class="game-btn" onclick="loadGame('https://example.com/game17')">Game 17</div>
+    <div class="game-btn" onclick="loadGame('https://example.com/game18')">Game 18</div>
+    <div class="game-btn" onclick="loadGame('https://example.com/game19')">Game 19</div>
+    <div class="game-btn" onclick="loadGame('https://example.com/game20')">Game 20</div>
+
+    <div class="game-btn" onclick="loadGame('https://example.com/game21')">Game 21</div>
+    <div class="game-btn" onclick="loadGame('https://example.com/game22')">Game 22</div>
+    <div class="game-btn" onclick="loadGame('https://example.com/game23')">Game 23</div>
+    <div class="game-btn" onclick="loadGame('https://example.com/game24')">Game 24</div>
+    <div class="game-btn" onclick="loadGame('https://example.com/game25')">Game 25</div>
+    <div class="game-btn" onclick="loadGame('https://example.com/game26')">Game 26</div>
+    <div class="game-btn" onclick="loadGame('https://example.com/game27')">Game 27</div>
+    <div class="game-btn" onclick="loadGame('https://example.com/game28')">Game 28</div>
+    <div class="game-btn" onclick="loadGame('https://example.com/game29')">Game 29</div>
+    <div class="game-btn" onclick="loadGame('https://example.com/game30')">Game 30</div>
+
+    <div class="game-btn" onclick="loadGame('https://example.com/game31')">Game 31</div>
+    <div class="game-btn" onclick="loadGame('https://example.com/game32')">Game 32</div>
+    <div class="game-btn" onclick="loadGame('https://example.com/game33')">Game 33</div>
+    <div class="game-btn" onclick="loadGame('https://example.com/game34')">Game 34</div>
+    <div class="game-btn" onclick="loadGame('https://example.com/game35')">Game 35</div>
+    <div class="game-btn" onclick="loadGame('https://example.com/game36')">Game 36</div>
+    <div class="game-btn" onclick="loadGame('https://example.com/game37')">Game 37</div>
+    <div class="game-btn" onclick="loadGame('https://example.com/game38')">Game 38</div>
+    <div class="game-btn" onclick="loadGame('https://example.com/game39')">Game 39</div>
+    <div class="game-btn" onclick="loadGame('https://example.com/game40')">Game 40</div>
+
+    <div class="game-btn" onclick="loadGame('https://example.com/game41')">Game 41</div>
+    <div class="game-btn" onclick="loadGame('https://example.com/game42')">Game 42</div>
+    <div class="game-btn" onclick="loadGame('https://example.com/game43')">Game 43</div>
+    <div class="game-btn" onclick="loadGame('https://example.com/game44')">Game 44</div>
+    <div class="game-btn" onclick="loadGame('https://example.com/game45')">Game 45</div>
+    <div class="game-btn" onclick="loadGame('https://example.com/game46')">Game 46</div>
+    <div class="game-btn" onclick="loadGame('https://example.com/game47')">Game 47</div>
+    <div class="game-btn" onclick="loadGame('https://example.com/game48')">Game 48</div>
+    <div class="game-btn" onclick="loadGame('https://example.com/game49')">Game 49</div>
+    <div class="game-btn" onclick="loadGame('https://example.com/game50')">Game 50</div>
+  </div>
+
+  <div class="main">
+    <iframe id="gameFrame" src=""></iframe>
+  </div>
+</div>
+
+<script>
+function loadGame(url) {
+  document.getElementById("gameFrame").src = url;
+}
+</script>
+
+</body>
+</html>
